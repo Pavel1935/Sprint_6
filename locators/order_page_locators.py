@@ -2,12 +2,14 @@ from selenium.webdriver.common.by import By
 
 
 class OrderPageLocators:
-    COOKIE_LOC = By.XPATH, "//button[@id='rcc-confirm-button']"    # кнопка "Принять cookies"
+    COOKIE_LOC = By.XPATH, "//button[@id='rcc-confirm-button']"
+    # кнопка "Принять cookies"
     ORDER_BUTTON_UP = By.XPATH, "//button[@class='Button_Button__ra12g']"
     # кнопка "Заказать" сверху
     ORDER_BUTTON_DOWN = By.XPATH, "//button[@class='Button_Button__ra12g Button_Middle__1CSJM']"
     # кнопка "Заказать" снизу
-    PAGE_TITLE_LOC = By.XPATH, "//div[@class='Order_Header__BZXOb']" #заголовок страница заказа
+    PAGE_TITLE_LOC = By.XPATH, "//div[@class='Order_Header__BZXOb']"
+    #заголовок страница заказа
     INPUT_NAME_LOC = By.XPATH, "//input[contains(@class, 'Input_Input__1iN_Z') and @placeholder='* Имя']"
     # инпут имя
     INPUT_LAST_NAME_LOC = By.XPATH, "//input[contains(@class, 'Input_Input__1iN_Z') and @placeholder='* Фамилия']"

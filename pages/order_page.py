@@ -2,10 +2,8 @@ import allure
 from locators.order_page_locators import OrderPageLocators
 from pages.base_page import BasePage
 
-
-@allure.step('')
 class OrderPage(BasePage):
-    @allure.step('Согласие с куками')
+    @allure.step('Нажимаем кнопку Согласие с куками')
     def click_on_cookie(self):
         self.click_on_element(OrderPageLocators.COOKIE_LOC)
 
@@ -31,7 +29,6 @@ class OrderPage(BasePage):
     @allure.step('Подтверждаем создание заказа')
     def order_step_3_finish(self):
         self.click_on_element(OrderPageLocators.BUTTON_YES_LOC)
-        # self.find_on_element(OrderPageLocators.BUTTON_STATUS_LOC)
         return self.get_text(OrderPageLocators.BUTTON_STATUS_LOC)
 
 
